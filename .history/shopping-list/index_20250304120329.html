@@ -31,7 +31,7 @@
 
 
     <script>
-        const list = document.querySelector("ul");
+        const list = document.que = itemrySelector("ul");
         const listItem = document.createElement("li");
         const listTitle = document.createElement("span");
         const delBbutton = document.createElement("button");
@@ -51,10 +51,7 @@
 
             // Set textContent of list title and delete button
             listTitle.textContent = item;
-            delBbutton.textContent = "delete";
-
-            // append list item as a child of the list
-            list.appendChild(listItem);
+            delBbutton.textContent = "x";
 
             console.log(listItem);
 
