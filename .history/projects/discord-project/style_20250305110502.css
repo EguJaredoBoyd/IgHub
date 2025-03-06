@@ -1,0 +1,14 @@
+body{
+    background-color: blueviolet;
+}
+
+header{
+    padding: 4rem;
+    background-color: chartreuse;
+    display: flex;
+}
+
+.left-section > img{
+    width: 20rem;
+
+}

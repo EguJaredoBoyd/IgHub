@@ -1,0 +1,62 @@
+body{
+    background-color: blueviolet;
+}
+
+header{
+    padding: 4rem;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.left-section > img{
+    width: 20rem;
+
+}
+
+.middle-section > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-family: open sans;
+}
+
+.middle-section > ul > li{
+    list-style-type: none;
+    
+}
+
+.middle-section > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.right-section > button > a{
+    text-decoration: none;
+    color: black;
+
+}
+
+button{
+    border: none;
+    width: auto;
+    padding: 1rem ;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    
+
+}

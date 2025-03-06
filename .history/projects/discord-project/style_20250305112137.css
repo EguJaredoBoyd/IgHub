@@ -1,0 +1,43 @@
+body{
+    background-color: blueviolet;
+}
+
+header{
+    padding: 4rem;
+    background-color: chartreuse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section > img{
+    width: 20rem;
+
+}
+
+.middle-section > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.middle-section > ul > li{
+    list-style-type: none;
+    
+}
+
+.middle-section > ul > li > a{
+    text-decoration: none;
+    color: white;
+}

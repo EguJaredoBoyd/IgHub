@@ -1,0 +1,29 @@
+body{
+    background-color: blueviolet;
+}
+
+header{
+    padding: 4rem;
+    background-color: chartreuse;
+
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section > img{
+    width: 20rem;
+
+}
+
+.middle-section > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}

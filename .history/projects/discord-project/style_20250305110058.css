@@ -1,0 +1,12 @@
+body{
+    background-color: blueviolet;
+}
+
+header{
+    padding: 4rem;
+}
+
+.left-section > img{
+    width: 20rem;
+
+}
