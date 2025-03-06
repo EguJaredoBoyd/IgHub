@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <!-- Internal Styling -->
+     <style>
+        li{
+            margin-bottom: 10px;    
+        }
+
+        li button{
+            font-size: 12px;
+            margin-left: 20px;
+            color: darkgray;
+        }
+     </style>
+</head>
+<body>
+    <h1>Shopping List</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button onclick="addItem()"> Add Item</button>
+    </div>
+
+    <ul></ul>
+
+
+
+    <script>
+        const list = document.querySelector("ul");
+        const listItem = document.createElement("li");
+        const listTitle = document.createElement("span");
+        const delBbutton = document.createElement("button");
+        const input = document.querySelector("input");
+        const button = document.querySelector("button");
+
+       function addItem() {
+            const list = document.querySelector("ul");
+            const listItem = document.createElement("li");
+            const listTitle = document.createElement("span");
+            const delBbutton = document.createElement("button");
+            const input = document.querySelector("input");
+
+            // Get input value
+            let item = input.value.trim();
+
+            // Check if input is not empty
+            if (item === "") {
+                alert("Please enter an item.");
+                return;
+            }
+
+            // Clear input field
+            input.value = "";
+
+            // Append elements
+            listTitle.textContent = item;
+            delBbutton.textContent = "Delete";
+
+            listItem.appendChild(listTitle);
+            listItem.appendChild(delBbutton);
+            list.appendChild(listItem);
+
+            // Delete functionality
+            delBbutton.addEventListener("click", function () {
+                list.removeChild(listItem);
+            });
+
+            // Show output
+            alert("You have added " + item + " to your shopping list");
+        }
+
+</body>
+</html>

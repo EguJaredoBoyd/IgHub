@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <!-- Internal Styling -->
+     <style>
+        li{
+            margin-bottom: 10px;    
+        }
+
+        li button{
+            font-size: 12px;
+            margin-left: 20px;
+            color: darkgray;
+        }
+     </style>
+</head>
+<body>
+    <h1>Shopping List</h1>
+
+    <div>
+        <label for="item">Enter a new item:</label>
+        <input type="text" name="item" id="item">
+        <button onclick="addItem()"> Add Item</button>
+    </div>
+
+    <ul></ul>
+
+
+
+    <script>
+        const list = document.querySelector("ul");
+        const listItem = document.createElement("li");
+        const listTitle = document.createElement("span");
+        const delBbutton = document.createElement("button");
+        const input = document.querySelector("input");
+        const button = document.querySelector("button");
+
+        function addItem(){
+
+            const list = document.querySelector("ul");
+            const listItem = document.createElement("li");
+            const listTitle = document.createElement("span");
+            const delBbutton = document.createElement("button");
+            const input = document.querySelector("input");
+            const button = document.querySelector("button");
+
+            // get input value
+            let item = input.value;
+
+            // clear input
+            input.value = "";
+
+            //append list title (span) and delete button to the list item element
+            listItem.appendChild(listTitle);
+            listItem.appendChild(delBbutton);
+
+            // Set textContent of list title and delete button
+            listTitle.textContent = item;
+            delBbutton.textContent = "delete";
+
+
+            // append list item as a child of the list
+            list.appendChild(listItem);
+
+            // TODO: make sure that other items on the list appear together with each new input
+
+            // Delete functionality
+            delBbutton.addEventListener("click", function () {
+                list.removeChild(listItem));
+
+            console.log(listItem);
+
+            // show output
+            alert("You have added " + item + " to your shopping list");
+        }
+    </script>
+</body>
+</html>
